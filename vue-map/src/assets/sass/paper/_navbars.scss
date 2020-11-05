@@ -358,7 +358,7 @@
 .red{
   color: #ff0000;
 }
-.collapse .navbar-text{
+.toggle-collapse .navbar-text{
   line-height: 55px;
 }
 
@@ -487,7 +487,7 @@
 }
 
 .burger-menu{
-  .collapse{
+  .toggle-collapse{
     .navbar-nav{
       a{
         color: $black-color;
@@ -495,6 +495,7 @@
     }
   }
 }
+
 .navbar-transparent{
   background: transparent !important;
   border-bottom: 1px solid transparent;
