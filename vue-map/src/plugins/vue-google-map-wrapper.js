@@ -1,5 +1,5 @@
 import googleMapFactory from '@/components/map'
-import googleMapMarker from '@/components/marker'
+// import googleMapMarker from '@/components/marker'
 // import { component } from 'vue/types/umd'
 
 function install (Vue, options) {
@@ -7,16 +7,16 @@ function install (Vue, options) {
 
     const googleMap = googleMapFactory(apiKey)
 
-    const components = {
-        googleMap,
-        googleMapMarker
-    }
+    // const components = {
+    //     googleMap,
+    //     googleMapMarker
+    // }
 
-    Object.defineProperties(components).forEach(([componentName, component]) => {
-    Vue.component(componentName, component)
-    })
+    // Object.defineProperties(components).forEach(([componentName, component]) => {
+    // Vue.component(componentName, component)
+    // })
 
-    // Vue.component('googleMap', googleMap)
+    Vue.component('googleMap', googleMap)
 }
 
 export default install
